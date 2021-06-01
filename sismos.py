@@ -25,6 +25,6 @@ def getLastSismo():
         r = requests.request("POST", urlSlackError, headers=headersSlackError, data=payloadSlackError)
         print(r.status_code, r.reason)
 
-while True:
-    getLastSismo()
-    time.sleep(1)
+#while True:
+getLastSismo()
+#time.sleep(1)
